@@ -23,8 +23,8 @@ This project involves cleaning a real-world dataset of company layoffs using **S
 2. **Standardize Text Fields**  
    - Trimmed whitespace from company names  
    - Standardized values like:
-     - `crypto-related`, `cryptocurrency` → `crypto`
-     - `united states of america` → `United States`
+     -  `cryptocurrency` → `crypto`
+     - `united states.` → `United States`
 
 3. **Handle Missing Values**  
    - Replaced blank strings in `industry` with `NULL`  
@@ -33,9 +33,6 @@ This project involves cleaning a real-world dataset of company layoffs using **S
 
 4. **Data Type Conversion**  
    - Converted `date` column from `TEXT` to `DATE`
-
-5. **Final Cleanup**  
-   - Dropped helper column (`row_num`) used for duplicate identification
 
 ---
 
@@ -61,13 +58,6 @@ A clean, standardized, and analysis-ready dataset saved as `Cleaned_Data.csv`. T
 
 ---
 
-## 🚀 Future Enhancements
-
-- Automate the cleaning process using stored procedures or scripts
-- Integrate with Power BI or Python for analysis and dashboards
-- Add logging and data validation steps for larger pipelines
-
----
 
 ## 📬 Contact
 
